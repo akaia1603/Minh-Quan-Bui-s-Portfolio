@@ -10,7 +10,7 @@
 }
 :root {
   font-size: var(--p-font-size);
-  line-weight: var(--p-line-weight);
+  line-height: var(--p-line-height);
   letter-spacing: var(--p-letter-spacing);
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;

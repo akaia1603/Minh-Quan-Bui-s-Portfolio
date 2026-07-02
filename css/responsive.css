@@ -14,3 +14,51 @@ Media Queries
     max-width: 1028px;
   }
 }
+
+/* Tablet */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .header_container {
+    flex-direction: column;
+  }
+
+  .header_column--left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_content--left {
+    align-items: center;
+
+    & p {
+      text-align: center;
+      max-width: 320;
+    }
+  }
+
+  .header__column--right {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* phone */
+@media (max-width: 640px) {
+  :root {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .container {
+    max-width: 475px;
+    padding: 0 1rem;
+  }
+
+  header {
+    margin-top: 20px;
+  }
+  .header__badge_container {
+    flex-direction: column;
+  }
+}
