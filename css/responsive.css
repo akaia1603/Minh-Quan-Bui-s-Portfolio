@@ -44,6 +44,20 @@ Media Queries
   }
 }
 
+/* small tablet - landscape mode */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  /* about me */
+  .aboutMe__section {
+    margin: 80px auto;
+    & img {
+      display: none;
+    }
+  }
+}
+
 /* phone */
 @media (max-width: 640px) {
   :root {
@@ -55,10 +69,27 @@ Media Queries
     padding: 0 1rem;
   }
 
+  .section__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
   header {
     margin-top: 20px;
   }
   .header__badge_container {
     flex-direction: column;
+  }
+
+  /* About me */
+  .aboutMe__container {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 2rem;
+  }
+
+  .aboutMe__content_container {
+    border-radius: 2rem;
   }
 }
