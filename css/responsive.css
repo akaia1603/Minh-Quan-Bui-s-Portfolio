@@ -13,12 +13,25 @@ Media Queries
   .container {
     max-width: 1028px;
   }
+  /* Skills */
+  .softSkills_badge {
+    position: static !important;
+    transform: none !important ;
+  }
+
+  .softSkills__book_icons {
+    display: none;
+  }
 }
 
 /* Tablet */
 @media (max-width: 1280px) {
   .container {
     max-width: 1024px;
+  }
+  section {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   .header_container {
     flex-direction: column;
@@ -56,6 +69,18 @@ Media Queries
       display: none;
     }
   }
+
+  /* Skills */
+  .skills__grid_container {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+
+    & .skill__grid_item {
+      padding: 1rem 1rem;
+      grid-column: span 1 !important;
+      grid-row: span 1 !important;
+    }
+  }
 }
 
 /* phone */
@@ -91,5 +116,10 @@ Media Queries
 
   .aboutMe__content_container {
     border-radius: 2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 0;
   }
 }
